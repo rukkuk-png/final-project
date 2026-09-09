@@ -17,6 +17,7 @@ def emotion_detector(text_to_analyze):
     response = requests.post(url, json = myobj, headers = header ,timeout = 60)
     # Parsing the JSON response from the API
     formatted_response = json.loads(response.text)
+    #print(formatted_response)
     list_emotion_predictions = formatted_response['emotionPredictions']
     dic_emotion = list_emotion_predictions [0]
     anger_score = dic_emotion['emotion']['anger']
