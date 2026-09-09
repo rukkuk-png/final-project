@@ -11,7 +11,7 @@ from EmotionDetection.emotion_detection import emotion_detector
 app = Flask("Emotion Detector")
 
 @app.route("/emotionDetector")
-def emotion_detector():
+def emo_detector():
     ''' This code receives the text from the HTML interface and 
         runs Emotion Detector over it using emotion_detector()
         function. The output returned shows the details for the provided text.

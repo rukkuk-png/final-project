@@ -1,5 +1,8 @@
 """ This is the emotional detection script"""
-import requests # Import the requests library to handle HTTP requests
+"""Emotion Predict function of the Watson NLP Library. For accessing this function, the URL, the headers, and the input json format is as follows.""
+
+import requests 
+# Import the requests library to handle HTTP requests
 
 # Define a function named emotion_detection that takes a input  string(text_to_analyze)
 
